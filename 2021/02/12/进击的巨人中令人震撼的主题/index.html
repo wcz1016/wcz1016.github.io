@@ -21,7 +21,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"baishisi.xyz","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+    var CONFIG = {"hostname":"baishisi.xyz","root":"/","images":"/images","scheme":"Muse","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 <meta name="description" content="最近追完了进击的巨人漫画，实在是太精彩了。趁着现在还有印象整理下巨人触动我的主题。 自由自由，多么美好的字眼。追寻自由这一主题可以说贯穿了主角团整个故事的行动。从少年艾伦对墙外世界的向往，到调查兵团千辛万苦的墙外调查，再到真相揭露后的艾尔迪亚人的救亡图存与反抗活动，无不贯彻了艾尔迪亚人对自由的向往。而在追寻自由过程中遇到阻碍与克服阻碍，也就构成了巨人的主线内容。 那么什么限制了艾尔迪亚人的自由呢？">
 <meta property="og:type" content="article">
@@ -31,7 +31,7 @@
 <meta property="og:description" content="最近追完了进击的巨人漫画，实在是太精彩了。趁着现在还有印象整理下巨人触动我的主题。 自由自由，多么美好的字眼。追寻自由这一主题可以说贯穿了主角团整个故事的行动。从少年艾伦对墙外世界的向往，到调查兵团千辛万苦的墙外调查，再到真相揭露后的艾尔迪亚人的救亡图存与反抗活动，无不贯彻了艾尔迪亚人对自由的向往。而在追寻自由过程中遇到阻碍与克服阻碍，也就构成了巨人的主线内容。 那么什么限制了艾尔迪亚人的自由呢？">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-02-12T10:30:16.000Z">
-<meta property="article:modified_time" content="2021-02-12T10:32:55.164Z">
+<meta property="article:modified_time" content="2021-02-23T13:34:58.788Z">
 <meta property="article:author" content="白十四">
 <meta property="article:tag" content="进击的巨人">
 <meta property="article:tag" content="读后感">
@@ -100,6 +100,9 @@
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -120,6 +123,12 @@
 
 
 
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
 
 
 
@@ -160,14 +169,17 @@
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives">
+          <a href="/archives/">
+        
           <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
         <span class="site-state-item-count">4</span>
-        <span class="site-state-item-name">标签</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -228,10 +240,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-02-12 18:30:16 / 修改时间：18:32:55" itemprop="dateCreated datePublished" datetime="2021-02-12T18:30:16+08:00">2021-02-12</time>
+      <time title="创建时间：2021-02-12 18:30:16" itemprop="dateCreated datePublished" datetime="2021-02-12T18:30:16+08:00">2021-02-12</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-02-23 21:34:58" itemprop="dateModified" datetime="2021-02-23T21:34:58+08:00">2021-02-23</time>
+      </span>
 
   
 </div>
@@ -252,6 +270,8 @@
 <li>墙外的敌意与压迫</li>
 </ol>
 <p>其中第三部分探讨的哲学社会学政治问题尤其严肃现实，也是最让我震撼的地方。</p>
+<a id="more"></a>
+
 <h2 id="阶级压迫"><a href="#阶级压迫" class="headerlink" title="阶级压迫"></a>阶级压迫</h2><p>马莱人仇恨艾尔迪亚人，对艾尔迪亚人进行了异化，将艾尔迪亚人打成恶魔的后裔，从生活的方方面面对艾尔迪亚人进行压迫。艾尔迪亚人必须佩戴袖章，不允许进入特定的区域，不允许和马莱人接触，甚至随随便便就会被杀掉。除此之外还对艾尔迪亚人内部进行了异化，将艾尔迪亚人分为好的艾尔迪亚人和坏的艾尔迪亚人，遵纪守法，经过艰苦训练成为战士的艾尔迪亚儿童可以带领全家获得阶级的晋升，成为光荣马莱人。这一点和《厌女》提到的手段如出一辙，男人不仅将女人视为低等人群，还把女人内部分为了圣女与娼妓两部分，两类女人互相异化。这种阶级压迫在现实中也是很常见的，上层阶级既厌恶下层阶级，又需要下层阶级的价值，于是稍微保留了一点上升通道，通过这样的手段分化下层阶级。归根结底游戏规则还是由压迫者制定的，被压迫者由于压迫者的价值标准产生了分化，从而无法团结反抗，不得不说十分可悲。</p>
 <p>有压迫的地方就会有反抗，艾尔迪亚人想要反抗马莱人的压迫，他们内部也有着不同的倾向，彼此冲突。艾尔迪亚人内部至少有三种思潮：</p>
 <ol>
@@ -339,7 +359,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">白十四</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
     </div>
@@ -347,7 +367,7 @@
 
   
   <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
 

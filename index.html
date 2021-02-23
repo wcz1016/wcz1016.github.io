@@ -21,7 +21,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"baishisi.xyz","root":"/","images":"/images","scheme":"Gemini","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+    var CONFIG = {"hostname":"baishisi.xyz","root":"/","images":"/images","scheme":"Muse","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="白十四的博客">
@@ -94,6 +94,9 @@
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -114,6 +117,12 @@
 
 
 
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
 
 
 
@@ -153,14 +162,17 @@
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives">
+          <a href="/archives/">
+        
           <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
         <span class="site-state-item-count">4</span>
-        <span class="site-state-item-name">标签</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -220,10 +232,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-02-12 18:30:16 / 修改时间：18:32:55" itemprop="dateCreated datePublished" datetime="2021-02-12T18:30:16+08:00">2021-02-12</time>
+      <time title="创建时间：2021-02-12 18:30:16" itemprop="dateCreated datePublished" datetime="2021-02-12T18:30:16+08:00">2021-02-12</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-02-23 21:34:58" itemprop="dateModified" datetime="2021-02-23T21:34:58+08:00">2021-02-23</time>
+      </span>
 
   
 </div>
@@ -244,24 +262,14 @@
 <li>墙外的敌意与压迫</li>
 </ol>
 <p>其中第三部分探讨的哲学社会学政治问题尤其严肃现实，也是最让我震撼的地方。</p>
-<h2 id="阶级压迫"><a href="#阶级压迫" class="headerlink" title="阶级压迫"></a>阶级压迫</h2><p>马莱人仇恨艾尔迪亚人，对艾尔迪亚人进行了异化，将艾尔迪亚人打成恶魔的后裔，从生活的方方面面对艾尔迪亚人进行压迫。艾尔迪亚人必须佩戴袖章，不允许进入特定的区域，不允许和马莱人接触，甚至随随便便就会被杀掉。除此之外还对艾尔迪亚人内部进行了异化，将艾尔迪亚人分为好的艾尔迪亚人和坏的艾尔迪亚人，遵纪守法，经过艰苦训练成为战士的艾尔迪亚儿童可以带领全家获得阶级的晋升，成为光荣马莱人。这一点和《厌女》提到的手段如出一辙，男人不仅将女人视为低等人群，还把女人内部分为了圣女与娼妓两部分，两类女人互相异化。这种阶级压迫在现实中也是很常见的，上层阶级既厌恶下层阶级，又需要下层阶级的价值，于是稍微保留了一点上升通道，通过这样的手段分化下层阶级。归根结底游戏规则还是由压迫者制定的，被压迫者由于压迫者的价值标准产生了分化，从而无法团结反抗，不得不说十分可悲。</p>
-<p>有压迫的地方就会有反抗，艾尔迪亚人想要反抗马莱人的压迫，他们内部也有着不同的倾向，彼此冲突。艾尔迪亚人内部至少有三种思潮：</p>
-<ol>
-<li>以吉克为首的义勇军，提倡艾尔迪亚人安乐死计划，是弗利兹王思想的更极端形式，承担了一切对艾尔迪亚人的仇恨，并通过绝育来彻底根除艾尔迪亚人以及由此导致的仇恨</li>
-<li>以艾伦为首的激进派，目的是引发地鸣，踏平墙外世界</li>
-<li>调查军团和军政府，他们的主张其实是最理智最正常的，向世界寻求沟通与理解。但在艾尔迪亚人被世界仇视的情况下，必须迅速地发展和用地鸣作为威慑</li>
-</ol>
-<p>目前为止，应该说是不幸吧，进展最顺利的其实是艾伦踏平世界的计划。艾伦是主角，他的主张听起来也很有道理，他的计划快要成功了，所以他是对的吗？恐怕并不是。借由艾伦的行动，谏山创引出了另一个沉重的主题。</p>
-<h2 id="仇恨"><a href="#仇恨" class="headerlink" title="仇恨"></a>仇恨</h2><p>马莱人仇恨艾尔迪亚人，往岛上派出了无数的巨人，还派了具有巨人力量的孩子潜入城墙内破坏城墙，最终引发了城墙内生灵涂炭，无辜的人死去。所以艾伦也仇恨墙外的人，高喊着“把他们都驱逐出去”。出于仇恨的行动最终只能引发更多的仇恨，这一点谏山创是通过近乎疯狂的对称来表现的。</p>
-<p>从23卷开始，漫画的视角转到马莱，转到和第一卷的艾伦差不多年纪的一群马莱少年身上。他们过着“正常”的生活，直到那一天，敌人的势力混入了国内，法尔科被自己的“朋友”——库尔伽欺骗。库尔伽变成了巨人，毁灭了城市，生灵涂炭，无辜的人死去。他们的遭遇和艾伦小时候的遭遇如出一辙，甚至冲动的贾碧和忠诚的法尔科就像是艾伦三笠和阿尔敏的综合体。</p>
-<p>出于惯性，读者还是会与前半部的主角艾伦共情，为艾伦的胜利，马莱城市的毁灭拍手称快。可是随着故事的进展，视角越来越少聚焦在艾伦身上，反而更多地给了莱纳等马莱人。这个时候，艾伦变得越发地陌生起来，而莱纳和贝尔托特却变得不再那么面目可憎难以理解。直到艾伦发动地鸣，可以说是狠狠地扇了读者一巴掌——艾伦已经彻底变成了一个恐怖分子，变成了全书最大的反派。艾伦的家人和伙伴确实因为巨人而死，所以就要把自身的愤怒和遭遇发泄到全世界的人，让无辜的人也体验到自己的痛苦吗？</p>
-<p>事实上，沉浸于仇恨中的读者在之前就应该有所警觉了。艾尔迪亚人不是坏人，马莱人也不都是坏人，大家只是被这个世界所扭曲，被彼此的仇恨蒙蔽了双眼，不管哪一方取得阶段性胜利，都是会有无辜的人死去。吉克的计划也不是那么不可理喻，如果彼此仇恨的双方中有一方彻底消失了，仇恨自然也不复存在了不是吗？</p>
-<p>谏山创也给出了处理仇恨的正确方式，就是贾碧线。贾碧从狂热的马莱战士，出于仇恨杀死莎夏，到理解艾尔迪亚人不过也只是无辜的普通人，到被尼科洛和女孩仇恨，被莎夏父亲原谅，再到出手救下女孩。她完成了心路的转变和仇恨的消解，甚至能够出手去化解让对莱纳的仇恨。这时候回忆中马尔科的话也越发振聋发聩，“我们还没有好好谈谈啊”。是的，通过忠实地从双方视角展现仇恨与战争，进击的巨人完成了反战主题的升华，沟通和原谅才是解决仇恨的正确方式，战争不是。TLOU2想表达的应该也是这样一种主题，即从双方视角展现仇恨，从而得出原谅才是唯一的解决方案。但是它可能用的手法不太好？等玩一下之后再做判断吧。</p>
-<p>最近看到一些巨人的评论，居然会有人是支持地鸣，为艾伦的失败感到惋惜，觉得阿尔敏等人坏了艾伦的好事，对于这些人，我只能说他们看了也是白看。</p>
-<h2 id="自由之后"><a href="#自由之后" class="headerlink" title="自由之后"></a>自由之后</h2><p>就算艾伦的计划能够成功，那他的行为就是真正自由的吗？艾伦在指责阿尔敏时说，阿尔敏频繁去找阿尼是受了贝尔托特记忆的影响。这其实是一个很有意思的说法，也就是自我同一性的问题。当体内存在了其他人、而且是很多代人的记忆之后，个人的人格会不会受到影响呢？如果这个答案是肯定的，那么艾伦体内有着进击的巨人，始祖巨人和地槌巨人的记忆，他怎么又能保证自己的人格没有受到影响呢？尤其进击的巨人可以看到未来，这可以说是自由意志的大忌了。如果艾伦已经看到了未来，那么他的行为还是出于自己的自由意志吗？艾伦为马莱小孩流泪，却还是阻止不了未来的自己踏平小孩的尸体，这是一个自由的人吗？我不这么觉得。</p>
-<p>如果艾伦真的看到了未来，无法改变未来，就像格里夏一样只能按照记忆里的剧本行动，那么可以自由行动的阿尔敏等人在剧本中扮演了什么样的角色呢？如果他们只是碰巧被艾伦遗漏，成为了艾伦计划中的变数，最终阻止了艾伦，那么艾伦记忆里的计划就不是不可改变的吧？</p>
-<p>我更愿意相信，自由行动的阿尔敏一行人也是剧本的一部分。艾伦已经预见了自己会被他们阻止，甚至他的目的就是被阻止。地鸣开始后，不同势力的人类几乎已经完全消除了仇恨团结起来。在更强大的力量面前，人类终于意识到了彼此是同类，仇恨是完全没有意义的。艾伦牺牲了自己换取了全人类的和平，如果事实如此的话，那么艾伦反而是大善人了。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/02/12/%E8%BF%9B%E5%87%BB%E7%9A%84%E5%B7%A8%E4%BA%BA%E4%B8%AD%E4%BB%A4%E4%BA%BA%E9%9C%87%E6%92%BC%E7%9A%84%E4%B8%BB%E9%A2%98/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -318,7 +326,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-02-21 10:59:31" itemprop="dateModified" datetime="2021-02-21T10:59:31+08:00">2021-02-21</time>
+        <time title="修改时间：2021-02-23 21:35:13" itemprop="dateModified" datetime="2021-02-23T21:35:13+08:00">2021-02-23</time>
       </span>
 
   
@@ -333,92 +341,14 @@
     <div class="post-body" itemprop="articleBody">
           <p>2020年真的是很糟糕的一年，尤其下半年的绝大部分时间是在焦虑当中度过的，今年的标记数甚至比18年还要少，玩过的游戏数量也不算多。但是还是打算继续之前的习惯，写一写今年的游戏总结。</p>
 <h2 id="音游"><a href="#音游" class="headerlink" title="音游"></a>音游</h2><p>我其实算是一个音游爱好者，但是程度也只能停留在“爱好”而非“擅长”。我很喜欢和音乐合二为一的感觉，完成合适的谱面是一种很愉悦的心流体验。而且音游有着碎片化的优点，一首歌只需要几分钟的时间就可以打完，也可以通过不断地”再来一局“消磨很多的时间。想要玩好音游，重复的练习与背板是必不可少的。可是我其实很讨厌重复地练习和失败，所以最后往往会变成简单的谱面懒得打，困难的谱面打不过的尴尬局面。</p>
-<p>今年玩过的音游有：</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/27667186/"><strong>Cytus II</strong></a></p>
-<p><img src="https://img3.doubanio.com/lpic/s33606050.jpg" alt="Cytus II"></p>
-<p>这个游戏其实大概在很久之前就玩过了，这次是为了初音未来的曲包再次购买。说实话其实不怎么喜欢这个搓屏幕的游戏方式，曲风也不是特别喜欢。为了升级解锁剧情和新曲目，还不得不打之前的不喜欢的曲目，久而久之就失去了兴趣。最终只通关了初音未来的曲包，后续也没怎么拿出来玩过。</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/30249473/"><strong>Muse Dash</strong></a></p>
-<p><img src="https://img2.doubanio.com/lpic/s29794322.jpg" alt="Muse Dash"></p>
-<p>很有意思的游戏，音游和跑酷相结合，虽然有些谱面不太舒服，但是可以靠视觉判定来辅助，甚至可以通过”躲开所有的音符“来通关。画风既可爱又色气，制作组能够保持更新和与社区紧密联系，这是我很喜欢的地方。</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/34922029/"><strong>DJMAX RESPECT</strong></a></p>
-<p><img src="https://img9.doubanio.com/lpic/s33549436.jpg" alt="DJMAX RESPECT"></p>
-<p>2020年开年的一笔巨款开销，是我为数不多的在首发后没多久购入的游戏。这是久仰大名的DJMAX系列的新作，DJMAX算是下落式音游的鼻祖，而下落式音游算是现在音游中最主流的形式，DJMAX的地位不言而喻。当时的我有街机摇杆和键盘，以为自己一定能找到适合自的游玩方式，但是最终并没有。实在是太难了，到现在都没有熟悉四键以上的操作，加上反盗版系统每次都要载入好久甚至会载入失败，最终放弃。</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/26980047/"><strong>钢琴师</strong></a></p>
-<p><img src="https://img3.doubanio.com/lpic/s29359030.jpg" alt="钢琴师"></p>
-<p>同样也是下落式音游，优点在于名画+名曲的组合，界面也比较让人舒服。缺点是游玩模式，巡演模式、组曲模式、联系模式，每个模式都很让人糟心……</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/26339678/"><strong>Lumines</strong></a></p>
-<p><img src="https://img9.doubanio.com/lpic/s24923304.jpg" alt="Lumines"></p>
-<p>赞美水口哲也，Lumines和<a target="_blank" rel="noopener" href="https://www.douban.com/game/30328980/">俄罗斯方块：效应</a>给人带来的都是来自各个感官的美好体验。从Lumines中可以看到很多俄罗斯方块效应的创意雏形，即方块消除+音游的游戏形式。Lumines已经足够给大脑和听觉感受带来和谐的游戏体验，而俄罗斯方块在这个基础上更进一步，加上了绚丽的视觉效果，真是完美的游戏啊（</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/27168715/"><strong>初音未来歌姬计划FT</strong></a></p>
-<p><img src="https://img1.doubanio.com/lpic/s29641928.jpg" alt="初音未来歌姬计划"></p>
-<p>这个游戏可能会一直伴随我的PS4生命周期，上半年家里换了电视在玩，年底拿回PS4接上显示器还是在玩。今年最大的进步是学会了自定义按键，能够利用起双手的食指和中指，这样同时按下三四个键就不是问题了。但是这个游戏也是之前说的尴尬情况最严重的游戏，我的水平的大概是hard7-7.5左右，超过这个难度，哪怕只是一点，都必须要花费大量的时间练习才有可能打过，而低于这个难度又因为太简单而不屑一顾，所以很难找到玩得舒服的曲目和难度区间。某种意义上算是瓶颈吗？因为懒得练习就一直卡在瓶颈里。</p>
-<h2 id="格斗游戏"><a href="#格斗游戏" class="headerlink" title="格斗游戏"></a>格斗游戏</h2><p>格斗游戏算是2020年上半年的一个重要主题之一吧，为了格斗游戏还买了摇杆，也算是稍微努力练习过</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/25662663/"><strong>骷髅女孩</strong></a></p>
-<p><img src="https://img3.doubanio.com/lpic/s29812670.jpg"></p>
-<p>格斗游戏的入坑作，本来一直躺在库里吃灰，鬼使神差之下下载了下来玩了一下教程，一发不可收拾（也说明一个循序渐进的教程对格斗游戏多么重要）。具体的分析可以看<a target="_blank" rel="noopener" href="https://www.douban.com/review/12056455/">这篇日志</a>，目前游戏时间大概60+h，可以打打hard难度的电脑，擅长的角色是Valentine，Beowulf和Peacock</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/27109147/"><strong>罪恶装备Rev2</strong></a></p>
-<p><img src="https://cdn.akamai.steamstatic.com/steam/apps/520440/extras/20161129113240_1.jpg?t=1589336262"></p>
-<p>在通过骷髅女孩入门后，我就尝试了一直很神往的罪恶装备。Arc系的格斗系统和骷髅女孩还是有很多不同，首先按键就要更少（其实是骷髅女孩的按键在格斗游戏里算多的），其次就是各种系统要稍微复杂一点。罪恶装备实在是太帅了，科幻、硬派、摇滚、帅气的人设和招式，是我心里的格斗游戏NO.1。罪恶装备的人物也要更多，也几乎每个人物都有自己的系统，这个深度是独立游戏骷髅女孩不能比的。嘴上说着很喜欢，但是其实玩得没有骷髅女孩那么深。剧情模式没有打，因为全英文播片还是有点难顶，而且不知道前作剧情。和电脑对战的话，CPU的难度也不是很稳定，就算是高难度电脑也有机会乱拳打死，练习的意义不是很大。</p>
-<p>Arc家的格斗游戏系列，除了罪恶装备还有<a target="_blank" rel="noopener" href="https://www.douban.com/game/26610869/">苍翼默示录</a>和<a target="_blank" rel="noopener" href="https://www.douban.com/game/26845466/">夜下降生</a>，这几个系列的系统还是有点相似的。和罪恶装备的三渲二不同，这两个系列都是彻底的2D游戏。其中苍翼默示录的人设其实挺无感的，而夜下降生的画风却意外的喜欢，可能是因为透着一种贫穷稚嫩的感觉吧……夜下降生也算是社团作品，制作精良程度肯定也是没法跟罪恶装备比的，但是很“够用”，也很有个人特色（是我中二时期会最喜欢的风格）。</p>
-<p><img src="https://media.st.dl.pinyuncloud.com/steam/apps/586140/header.jpg?t=1577344312"></p>
-<p><img src="https://media.st.dl.pinyuncloud.com/steam/apps/801630/header.jpg?t=1589347044"></p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/27199042/"><strong>Vanguard Princess</strong></a></p>
-<p><img src="https://media.st.dl.pinyuncloud.com/steam/apps/262150/header.jpg?t=1585907602"></p>
-<p>很简陋的个人作品，像素画风，甚少的人物和招式，甚至没有返回功能，不支持手柄，win10可能打不开。但是它又……很有趣，以我最喜欢的这个角色为例，她的多种形态切换绝对是有着值得探索的深度的。其他角色虽然招式不多但也算各有特色。</p>
-<p><img src="https://wiki.gbl.gg/images/thumb/d/df/Luna_Stances.png/861px-Luna_Stances.png"></p>
-<p>而且这个游戏的画风真的很……色气。总之这款个人制作的格斗游戏，和上面提到的同人社团制作的夜下降生一起，让我感觉制作格斗游戏也很有趣。因为大可以从人设开始，先制作一个喜欢的二次元人设，为她安上喜欢的萌点、画风、背景故事和招式风格，再把她放到一个格斗游戏里面去和其他角色战斗。而且由于格斗游戏的多人性质，它真的可以起到联结创意和感情的作用“我想到一个什么什么招式”“我想到一个什么什么角色”“我们把她们加进去然后打一场？”操作喜欢的角色甚至是自己制作的角色去战斗，该多有意思呀。</p>
-<p><strong>其他</strong></p>
-<p>除了这些之外，还有一些格斗游戏只能算是浅尝辄止。</p>
-<p>试了SNK系的拳皇和侍魂，SNK家的游戏也都比较相似的，但是和arc家相比有很大不同，上手难度太大，没有深玩。街霸5因为一直被诟病的网络和季票问题干脆没有尝试。也尝试了3D格斗游戏，当时在铁拳和SoulCalibur中选了后者，挺后悔的，一是电脑配置原因表现不是很好（感觉它优化也有点问题吧），二是系统也很简陋，剧情居然是纯文字。3D格斗游戏和2D格斗游戏的差别就更大了，从比赛视频来看，双方的试探更多，华丽的连招更少，其实更接近现实中的格斗。玩了不义联盟，感觉那个机制还是稍微浅了一点，并不能打出很长的连招，观赏性和竞技性都低了一点，不知道真人快打系列怎么样。啊还有任天堂大乱斗也不得不提一下，其实现在格斗游戏做减法应该是大势所趋了，而任天堂大乱斗就是把减法做到了极致，在保留了格斗游戏趣味的极大地减少了操作难度，竞技性和合家欢两头都不误，只能说任天堂真的是宇宙主宰。</p>
-<h2 id="AVG"><a href="#AVG" class="headerlink" title="AVG"></a>AVG</h2><p><a target="_blank" rel="noopener" href="https://www.douban.com/game/10806189/"><strong>Ever17</strong></a></p>
-<p>打越钢太郎的早期作品，前80%的无聊内容都是为了最后的20%的震撼作铺垫。值吗？值，但是前期真的是太痛苦了。从这部作品中也能看到打越钢太郎十分爱用的一些手法，被困、叙诡、科幻、时间、爱，等等。</p>
-<p><img src="https://img9.doubanio.com/lpic/s26643655.jpg"></p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/11501879/"><strong>弹丸论破</strong></a></p>
-<p><img src="https://img2.doubanio.com/lpic/s29751193.jpg"></p>
-<p>即使被剧透还是掩盖不了它的精彩，跟打越相比小高要更放飞自我一点。其实很难不联想的极限脱出，但是弹丸论破实在过于无厘头了（</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/25839324/"><strong>恐怖惊魂夜</strong></a></p>
-<p><img src="https://img2.doubanio.com/lpic/s28541942.jpg"></p>
-<p>一点都不恐怖的恐怖惊魂夜，最有趣的地方在于不同的选择会导致不同的真相。被困在暴风雪山庄中的人一个接一个死亡，到底是凶手混入还是幽灵作祟？真相取决于玩家的选择。正常线和灵异线其实都不算出彩，但是各种奇怪的支线结局很有意思。问题在于，选择和结局并没有直接的关联，玩家并不知道自己的选择会导致什么样的结局以及为什么，所以要想拿到想要的结局，就只有遍历选择和看攻略两种方案，算是老游戏的通病？</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/11528014/"><strong>428：被封锁的涩谷</strong></a></p>
-<p><img src="https://img3.doubanio.com/lpic/s29751200.jpg"></p>
-<p>ChunSoft家的这几作AVG，从恐怖惊魂夜到街，再到428其实是一脉相承的。而428则是集大成者的成熟之作，可以说是AVG玩法的顶峰了。保留了富有幽默感的多结局，又有一个扣人心弦的主线故事，通过多视角切换来叙述，不同的人物行动可能不经意间就影响了彼此的命运。而玩家要做的就是解除不利的影响，保证故事顺利走向好结局。这个玩法也相当有趣，不同于之前的遍历选项，本作通过剧情的提示能让玩家动脑去思考“谁在什么时候影响了谁”，从而保证了故事和玩法都很有意思。真人立绘很有意思。</p>
-<h2 id="横版游戏"><a href="#横版游戏" class="headerlink" title="横版游戏"></a>横版游戏</h2><p><a target="_blank" rel="noopener" href="https://www.douban.com/game/26426595/"><strong>茶杯头</strong></a></p>
-<p><img src="https://img1.doubanio.com/lpic/s29630843.jpg"></p>
-<p>太难了，2020年第一天和lrb一起玩，现在分手了，还是没有打通</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/25959279/"><strong>铲子骑士</strong></a></p>
-<p><img src="https://img1.doubanio.com/lpic/s29539837.jpg"></p>
-<p>很有意思的复古游戏，保留了经典横版游戏趣味的同时加入了很多现代元素。从这个游戏的身上很容易能看出洛克人，马里奥，恶魔城等游戏的影子，除此之外还加入了类黑魂的死亡后掉落金钱的设定。关卡设计很有意思，尤其是幽魂骑士和国王骑士，关卡围绕着他们的独特机制进行设计，玩起来不要太爽。</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/30220591/"><strong>血污：月之诅咒</strong></a></p>
-<p><img src="https://img1.doubanio.com/lpic/s29783699.jpg"></p>
-<p>老恶魔城的精神续作，手感很硬，关卡也不简单，尤其是一个关卡多条路线很有恶魔城血轮的味道。角色和boss的设计都很帅，当为像素boss出场和像素主角拔刀惊呼“好帅”时，我意识到像素表现力也可以如此强大。</p>
-<h2 id="明日方舟"><a href="#明日方舟" class="headerlink" title="明日方舟"></a><a target="_blank" rel="noopener" href="https://www.douban.com/game/33434889/">明日方舟</a></h2><p><img src="https://img1.doubanio.com/lpic/s33498127.jpg"></p>
-<p>真的是年轻人（我）的第一款抽卡手游，上半年无聊的时候开始玩，刚好赶上危机合约，从此以后一发不可收拾，现在已经算是比较高配的玩家，也往里面充过钱了。我觉得这款游戏真的很不错，对它的分析写在了<a target="_blank" rel="noopener" href="https://www.douban.com/review/12895151/">这篇文章</a>里。当然文章里写的算是抽卡游戏的普遍特性，舟游独特的关卡设计、美术风格和运营都是很值得表扬的。但是现在也有点疲劳，准备弃坑了。</p>
-<h2 id="动作游戏"><a href="#动作游戏" class="headerlink" title="动作游戏"></a>动作游戏</h2><p><a target="_blank" rel="noopener" href="https://www.douban.com/game/30245105/"><strong>只狼</strong></a></p>
-<p><img src="https://img1.doubanio.com/lpic/s29960207.jpg"></p>
-<p>算是去年最大的成就之一，在去年……好吧其实是今年一月初终于打过了剑圣通关了。只狼真的是很优秀的动作游戏，它在传统动作游戏的基础上做了减法，没有复杂的连招，只保留了攻击和格挡这两个操作，让玩家在快节奏的攻防中找到动作游戏的快感。除此之外还它还有着魂系列的探索感和学习曲线，也为手残玩家提供了忍具作为备选方案，更不要说那种悲怆的使命感和东方美感，之前拿了GOTY可以说是实至名归。</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/10750212/"><strong>猎天使魔女</strong></a> &amp; <a target="_blank" rel="noopener" href="https://www.douban.com/game/26366093/"><strong>猎天使魔女2</strong></a></p>
-<p><img src="https://img2.doubanio.com/lpic/s28112123.jpg"></p>
-<p>而猎天使魔女就是传统的动作游戏了，保留了动作游戏中复杂的连招和多种武器的选择。猎天使魔女的天才之处在于它的dodge offset系统，看了一点分析才知道，这个算是解决了传统动作游戏一直以来的难题——即长连招的性价比问题。长连招很帅，伤害可能也很高，但是可能打不完一套就被怪物打断了。鬼泣系列的解决方案是缩短连招长度，基本上没有超过五次按键的连招，大部分招式如突刺挑空恶魔手都是一次性的；和利用浮空技能，在安全的空中释放连招。而猎天使魔女的连招要长得多，而且所有连招最后一击的恶魔编织攻击才是伤害最高的攻击，连招打不完的损失真的很大。对此提供的解决方案就是dodge offset——成功闪避之后可以继续之前的连招，极大地提高了游戏的观赏性和趣味性。猎天使魔女还首创了“闪避后触发子弹时间”的设定，这个成为了之后白金工作室的标配，也是米哈游的重点抄袭对象。</p>
-<p>两部猎天使魔女相对比的话，1要更别扭一点，有着浮夸的幽默感，永远摁不上的QTE，奇葩的竞速和弹幕关；2去除了这些别扭的地方，却又感觉没内味了，关卡和boss都没1那么有意思了。但是2保留了1的全部武器敌人，还增加了1所没有的重型武器风格，提供了更明快的色调和短发贝姐，最后还反转成了父慈子孝大结局，贝姐友情亲情大丰收，好吧那确实不能再多说什么了。</p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p><a target="_blank" rel="noopener" href="https://www.douban.com/game/26954652/"><strong>马里奥奥德赛</strong></a></p>
-<p><img src="https://img1.doubanio.com/lpic/s29543798.jpg"></p>
-<p>任天堂就是世界的主宰！2D马牛逼3D马也牛逼！怎么能有这么神奇的游戏，这个学习曲线，可爱的角色们，精心制作的关卡和丰富的游戏内容和收集要素，实在是太让人欲罢不能了！</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/30316282/"><strong>Gris</strong></a></p>
-<p><img src="https://img1.doubanio.com/lpic/s29948088.jpg"></p>
-<p>这个评论其实挺两极的，画面和音乐都很优美，但是游戏内容过于空洞无聊。就我个人而言的话其实觉得很不错，确实内容不是太丰富，但是那些圆形方形45度角和颜色实在是太和谐太美好了，算是瑕不掩瑜</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/26339667/"><strong>绘图方块</strong></a></p>
-<p><img src="https://img2.doubanio.com/lpic/s33460893.jpg"></p>
-<p>玩起来很舒服的益智游戏，立体化之后烧脑程度翻倍</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/27596589/"><strong>Slay the Spire</strong></a></p>
-<p><img src="https://img3.doubanio.com/lpic/s29848431.jpg"></p>
-<p>玩了几十个小时，只打了一次心脏，我玩卡牌游戏还是太菜了。玩的时候会很沉迷，但是玩后又会稍微有点后悔，因为会花很多时间，提不起劲来再玩一局（因为反正也打不过是吧）是很好的rougelike游戏，不然明日方舟也不会抄了</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/27066095/"><strong>生化危机RE2</strong></a></p>
-<p><img src="https://img9.doubanio.com/lpic/s33505366.jpg"></p>
-<p>好吧其实这个我只打了里昂表关……但还是大言不惭地写在这里。本来生化2就是很棒的AVG，就算把地图和解谜全部变成2D俯视角，关卡设计还是足够棒。更不要提这个出色的3D重制了，精致阴暗的画面，幽闭的氛围，射击手感都让玩家更加身临其境了。</p>
-<p><a target="_blank" rel="noopener" href="https://www.douban.com/game/26257372/"><strong>守望先锋</strong></a></p>
-<p><img src="https://img1.doubanio.com/lpic/s28691319.jpg"></p>
-<p>白月光游戏之一，因为高中的时候大家都在玩。实际玩到之后也感觉很不错，画风、人设、MOBA+FPS的游戏机制都很不错，可惜快凉了，我不擅长FPS，也没时间练习，跟朋友打了几把就卸了。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/01/23/2020%E6%B8%B8%E6%88%8F%E6%80%BB%E7%BB%93/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -537,7 +467,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">白十四</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
     </div>
@@ -545,7 +475,7 @@
 
   
   <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
 
