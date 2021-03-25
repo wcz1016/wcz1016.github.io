@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"baishisi.xyz","root":"/","images":"/images","scheme":"Muse","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="单就教程来说，我觉得格斗游戏真是很像剪刀石头布，是一种很精妙的游戏机制。 最一开始教导的游戏机制就是防御可以抵抗攻击，攻击的恢复时间要长于防御受击的恢复时间，所以只要防御住对手攻击就可以有反击机会。而防御又分为站立防御和蹲防两种，站立防御防不住下段攻击，蹲防又防不住上段攻击，所以“选择使用什么类型的攻击”和“选择使用什么类型的防御”就是对玩家意识的考验。 投技可以破开对手防御，但是投技距离短出招慢">
+<meta property="og:type" content="article">
+<meta property="og:title" content="格斗游戏就像剪刀石头布">
+<meta property="og:url" content="http://baishisi.xyz/2019/11/26/%E6%A0%BC%E6%96%97%E6%B8%B8%E6%88%8F%E5%B0%B1%E5%83%8F%E5%89%AA%E5%88%80%E7%9F%B3%E5%A4%B4%E5%B8%83/index.html">
+<meta property="og:site_name" content="白十四的博客">
+<meta property="og:description" content="单就教程来说，我觉得格斗游戏真是很像剪刀石头布，是一种很精妙的游戏机制。 最一开始教导的游戏机制就是防御可以抵抗攻击，攻击的恢复时间要长于防御受击的恢复时间，所以只要防御住对手攻击就可以有反击机会。而防御又分为站立防御和蹲防两种，站立防御防不住下段攻击，蹲防又防不住上段攻击，所以“选择使用什么类型的攻击”和“选择使用什么类型的防御”就是对玩家意识的考验。 投技可以破开对手防御，但是投技距离短出招慢">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img2.doubanio.com/view/thing_review/l/public/p5131393.webp">
+<meta property="og:image" content="https://img1.doubanio.com/view/thing_review/l/public/p5131409.webp">
+<meta property="article:published_time" content="2019-11-26T14:38:40.000Z">
+<meta property="article:modified_time" content="2021-03-25T07:48:04.551Z">
+<meta property="article:author" content="白十四">
+<meta property="article:tag" content="游戏">
+<meta property="article:tag" content="格斗游戏">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img2.doubanio.com/view/thing_review/l/public/p5131393.webp">
+
+
+<link rel="canonical" href="http://baishisi.xyz/2019/11/26/%E6%A0%BC%E6%96%97%E6%B8%B8%E6%88%8F%E5%B0%B1%E5%83%8F%E5%89%AA%E5%88%80%E7%9F%B3%E5%A4%B4%E5%B8%83/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>格斗游戏就像剪刀石头布 | 白十四的博客</title>
+  
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">白十四的博客</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">白十四</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://baishisi.xyz/2019/11/26/%E6%A0%BC%E6%96%97%E6%B8%B8%E6%88%8F%E5%B0%B1%E5%83%8F%E5%89%AA%E5%88%80%E7%9F%B3%E5%A4%B4%E5%B8%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="白十四">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="白十四的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          格斗游戏就像剪刀石头布
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-11-26 22:38:40" itemprop="dateCreated datePublished" datetime="2019-11-26T22:38:40+08:00">2019-11-26</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-03-25 15:48:04" itemprop="dateModified" datetime="2021-03-25T15:48:04+08:00">2021-03-25</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>单就教程来说，我觉得格斗游戏真是很像剪刀石头布，是一种很精妙的游戏机制。</p>
+<p>最一开始教导的游戏机制就是防御可以抵抗攻击，攻击的恢复时间要长于防御受击的恢复时间，所以只要防御住对手攻击就可以有反击机会。而防御又分为站立防御和蹲防两种，站立防御防不住下段攻击，蹲防又防不住上段攻击，所以“选择使用什么类型的攻击”和“选择使用什么类型的防御”就是对玩家意识的考验。</p>
+<p>投技可以破开对手防御，但是投技距离短出招慢，投技起手时容易被打断，既有风险又有收益，投技，这又是兼具了考验博弈和考验反应的一个机制，很刺激</p>
+<p>多个角色组队的话可以切换角色攻击或者援助攻击，对此又有outtake技能可以针对，又是一种剪刀石头布</p>
+<p>长连击可以让对手没有还手之力，但是重复的连击会触发提高drama值，最终使对手能挣脱，但是通过后跳或者切换连击又可以避免连击被打断</p>
+<p>总之每一种机制，都有对应的机制来反制，这样下来真的就很像一种剪刀石头布的博弈。</p>
+<p><img src="https://img2.doubanio.com/view/thing_review/l/public/p5131393.webp" alt="img"></p>
+<p>是不是很像剪刀石头布？</p>
+<p><img src="https://img1.doubanio.com/view/thing_review/l/public/p5131409.webp" alt="img"></p>
+<p>所以格斗游戏拆解开来，很像是一场快节奏的剪刀石头布大赛，一回合里，双方迅速大量地出剪刀石头布，裁判负责判定和计分。当然格斗游戏还是比剪刀石头布要复杂，一方面是格斗游戏的反应要求更高，你的反应速度至少要跟对手匹配才行，有点像打手背，对手抬起手的一瞬间要做好准备才行，否则是进入不到剪刀石头布那个意识比赛的境界的；另一方面是格斗游戏的策略性更强，每一种行动都具有风险和收益，在不同的场景下风险和收益是动态变化的，而不是剪刀石头布一样的完全随机，因此选择合适的策略/预测对手的策略都是可行的，博弈性也更强。</p>
+<p>所以格斗游戏其实是——需要动态调整策略的打手背+剪刀石头布游戏。这样的机制在其他游戏里也很常见，只狼里的拼刀其实就像是打手背一样，考验玩家的反应；而王者荣耀中使用猴子/李白等英雄的技能躲掉对手的技能，跟格斗游戏的机制是很相似的，玩家的快感与原始的打手背和剪刀石头布带来的快感也是相似的。</p>
+<p>经过一段时间的摸索，我对几个人物的机制和上手难度也有了一定的心得</p>
+<p>第一梯队：Felia, Valentine, Double 这三个人物没有自己的特殊机制，属于比较灵活的类型，只要手快就可以连起来。其中Double虽然看起来花里胡哨（可以复制其他7个人的招式）但是其实没有很复杂的机制，我觉得上挑+变冰箱+开枪足以应付普通难度电脑</p>
+<p>第二梯队：Peacock, Parasoul，Cerebella 之前也提到Peacock是我玩故事模式最大的收获，她其实是一个很容易上手的人。虽然看起来她和其他七个人物都不同，侧重于远程作战能力，但是其实并没有那么难。我用Peacock的逻辑基本就是躲在场地这头不停地扔炸弹过去，如果对手要近身就用投技或者BANG（MP）或者瞬移拉开距离。实在需要近身战斗的话，上挑技能也能保证基本的连击。比较难的点是1.必杀放出的炸弹的使用，感觉对战场时间和空间的把握要求都挺高的2.瞬移+炸弹的使用，该在什么时机接近对手进行连击。Cerebella的投技是她的特有机制，也是她的难点。而Parasoul是目前提到的人物中灵活性最差的，她没有二段跳或者Air Dash，她的特有机制是Kret军团和火焰弹，如果不掌握好火焰弹的使用，感觉输出是要大打折扣的，虽然我很喜欢Parasoul的人设，但是可能掌握不了她</p>
+<p>第三梯队：Painwheel, Ms.Fortune 两个角色都有自己的独特机制，Ms.Fortune是扔脑袋和跟脑袋的配合攻击。脑袋扔出去前后招式有不同之处，理论上来说是脑袋离体后更灵活，但是也更危险，难度也更大，因为相当于双线操作，经常会眼睛不知道看哪；后来我决定干脆不要扔脑袋出去，就老老实实地用些简单连击，但是经常因为误操作把脑袋扔出去，然后用不出HP的时候才惊呼“哎我脑袋呢！”Painwheel的机制则是飞行+蓄力，两个机制随便一个都听起来很难了，这两个机制居然集中在了一个角色身上，我可能也永远掌握不了她吧</p>
+<p>可以看到，即使在骷髅女孩这少少的9个人物中，也已经涵盖了长手poke，近身快攻，双线操作，蓄力攻击等机制，这些机制即使在现在的MOBA游戏动作游戏中也很常见。作为一种相当传统的游戏机制，我觉得格斗游戏还是有很多值得挖掘的地方。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%B8%B8%E6%88%8F/" rel="tag"># 游戏</a>
+              <a href="/tags/%E6%A0%BC%E6%96%97%E6%B8%B8%E6%88%8F/" rel="tag"># 格斗游戏</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2018/06/15/%E6%89%8B%E6%AE%8B%E7%8E%A9%E5%AE%B6%E7%9A%84%E6%A8%AA%E7%89%88%E6%B8%B8%E6%88%8F%E4%B9%8B%E6%97%85/" rel="prev" title="手残玩家的横版游戏之旅">
+                  <i class="fa fa-chevron-left"></i> 手残玩家的横版游戏之旅
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/01/25/2019%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" rel="next" title="2019年度总结">
+                  2019年度总结 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">白十四</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+</body>
+</html>
