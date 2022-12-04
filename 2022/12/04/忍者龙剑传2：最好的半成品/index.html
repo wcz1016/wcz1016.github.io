@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"baishisi.xyz","root":"/","images":"/images","scheme":"Muse","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="最近通关了忍龙2中忍难度，总体来说是很过瘾的游戏体验，但也可以明显地感受到游戏的赶工痕迹。作为如今的游戏从业者，想尝试分析一下这个项目是哪里出了问题。 大概从四个方面来说：关卡、战斗&#x2F;武器、小怪和Boss">
+<meta property="og:type" content="article">
+<meta property="og:title" content="忍者龙剑传2：最好的半成品">
+<meta property="og:url" content="http://baishisi.xyz/2022/12/04/%E5%BF%8D%E8%80%85%E9%BE%99%E5%89%91%E4%BC%A02%EF%BC%9A%E6%9C%80%E5%A5%BD%E7%9A%84%E5%8D%8A%E6%88%90%E5%93%81/index.html">
+<meta property="og:site_name" content="白十四的博客">
+<meta property="og:description" content="最近通关了忍龙2中忍难度，总体来说是很过瘾的游戏体验，但也可以明显地感受到游戏的赶工痕迹。作为如今的游戏从业者，想尝试分析一下这个项目是哪里出了问题。 大概从四个方面来说：关卡、战斗&#x2F;武器、小怪和Boss">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/12/04/9vQBVgcE5GAJWMT.png">
+<meta property="article:published_time" content="2022-12-04T12:04:54.000Z">
+<meta property="article:modified_time" content="2022-12-04T15:05:01.016Z">
+<meta property="article:author" content="白十四">
+<meta property="article:tag" content="游戏分析">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/12/04/9vQBVgcE5GAJWMT.png">
+
+
+<link rel="canonical" href="http://baishisi.xyz/2022/12/04/%E5%BF%8D%E8%80%85%E9%BE%99%E5%89%91%E4%BC%A02%EF%BC%9A%E6%9C%80%E5%A5%BD%E7%9A%84%E5%8D%8A%E6%88%90%E5%93%81/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>忍者龙剑传2：最好的半成品 | 白十四的博客</title>
+  
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">白十四的博客</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E6%80%AA"><span class="nav-number">1.</span> <span class="nav-text">小怪</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%9A%84"><span class="nav-number">1.1.</span> <span class="nav-text">非常好的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%97%A0%E5%8A%9F%E6%97%A0%E8%BF%87"><span class="nav-number">1.2.</span> <span class="nav-text">无功无过</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A4%E4%BA%BA%E9%81%97%E6%86%BE"><span class="nav-number">1.3.</span> <span class="nav-text">令人遗憾</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%88%E7%B3%9F%E7%B3%95"><span class="nav-number">1.4.</span> <span class="nav-text">很糟糕</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E5%8D%A1"><span class="nav-number">2.</span> <span class="nav-text">关卡</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%88%98%E6%96%97%E6%9C%BA%E5%88%B6-%E6%AD%A6%E5%99%A8"><span class="nav-number">3.</span> <span class="nav-text">战斗机制&#x2F;武器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Boss"><span class="nav-number">4.</span> <span class="nav-text">Boss</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">白十四</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://baishisi.xyz/2022/12/04/%E5%BF%8D%E8%80%85%E9%BE%99%E5%89%91%E4%BC%A02%EF%BC%9A%E6%9C%80%E5%A5%BD%E7%9A%84%E5%8D%8A%E6%88%90%E5%93%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="白十四">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="白十四的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          忍者龙剑传2：最好的半成品
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-12-04 20:04:54 / 修改时间：23:05:01" itemprop="dateCreated datePublished" datetime="2022-12-04T20:04:54+08:00">2022-12-04</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>最近通关了忍龙2中忍难度，总体来说是很过瘾的游戏体验，但也可以明显地感受到游戏的赶工痕迹。作为如今的游戏从业者，想尝试分析一下这个项目是哪里出了问题。</p>
+<p>大概从四个方面来说：关卡、战斗/武器、小怪和Boss</p>
+<a id="more"></a>
+
+<h1 id="小怪"><a href="#小怪" class="headerlink" title="小怪"></a>小怪</h1><p>按照我的印象排了一下 roster，一些体验糟糕的怪物应该是赶工导致的，不然我只能怀疑是设计师脑子有病</p>
+<h2 id="非常好的"><a href="#非常好的" class="headerlink" title="非常好的"></a>非常好的</h2><ul>
+<li>各种忍者：出场率最高，贡献了最爽快的游戏体验</li>
+<li>阿紫&amp;领主：感觉是出场率第二高的怪，代表性的魔神怪物。攻击大开大合，不会出硬直，所以应对策略和忍者不同，贡献了另一种战斗体验</li>
+<li>蝎子：介于前两者之间，也是一种很棘手的怪物和很独特的体验</li>
+<li>狼人：和阿紫是同类型的怪物，但是会用伙伴的断肢作为投掷物攻击玩家，我觉得很有趣</li>
+<li>狗：我最讨厌的怪物，但是不得不承认这个凶狠AI做得很有压迫感</li>
+</ul>
+<h2 id="无功无过"><a href="#无功无过" class="headerlink" title="无功无过"></a>无功无过</h2><ul>
+<li>幽灵鱼：由前作保留下来的怪物，没有多少AI但是很危险，作为关卡的点缀还不错</li>
+<li>大螨虫：也是前作保留的怪物，AI还算可以，但是在关卡中堆了太多有点无聊/讨厌</li>
+</ul>
+<h2 id="令人遗憾"><a href="#令人遗憾" class="headerlink" title="令人遗憾"></a>令人遗憾</h2><ul>
+<li>大炮电锯哥：这个怪物的美术不错，远程近战兼顾的思路也很有意思，但是动作太迟缓，不知道是不是因为招式/AI没设计好所以藏一下拙</li>
+<li>紫色双头四足机器人：完成度很高，画风有点像情趣娃娃，令人印象深刻但也很突兀.可能就是因为和任何一个关卡画风都不符所以才丢到冥界那一关——反正冥界出现什么怪物都不奇怪不是吗。值得更多出场</li>
+</ul>
+<h2 id="很糟糕"><a href="#很糟糕" class="headerlink" title="很糟糕"></a>很糟糕</h2><ul>
+<li>双刀机甲&amp;机枪机甲：机枪机甲一直突突突，正常手段根本没办法处理。双刀机甲高血难断肢无硬直，不知道是设计得不好还是我太菜，总之体验不太愉快。这两者出场率都很低</li>
+<li>蠕虫&amp;红鱼：高血量低AI，纯恶心人</li>
+<li>红色恐龙：前作保留的怪物，但是可能没做太多调整，高数值+无法断肢，打起来很痛苦，可能这也是它只出现在一场战斗中的原因</li>
+<li>人马：同红色恐龙，只出现在两场战斗中</li>
+</ul>
+<h1 id="关卡"><a href="#关卡" class="headerlink" title="关卡"></a>关卡</h1><p>从第七章开始体验直线下降</p>
+<p>第七章：感觉地图是对称的，两部分的目标、路线和怪物都比较像，所以体验有些重复。加上过多的存档点和不太有趣的机甲怪，感觉这时候已经暴露了设计的疲态</p>
+<p>第八章：地雷、火箭筒兵、炮台除了拖玩家进度外毫无意义。而为玩家津津乐道的名场面“爆忍教堂”其实也有堆怪的嫌疑</p>
+<p>第九章：最愚蠢的蠕虫和红鱼，愚蠢的大螨虫堆怪，愚蠢的大蠕虫boss</p>
+<p>第十章：另一个名场面“好汉坡”也是堆怪</p>
+<p>第十一章：质量回升，从一代沿用的忍者村还是质量很高的一张地图</p>
+<p>十二章往后的记忆只有直线赶路和重打boss了</p>
+<p>另外，其实忍龙各关卡的美术风格十分割裂。感觉大家只是自顾自地做一些看起来很酷的东西，完全不考虑它们放在一起是不是统一的，以至于每关开头前要放一大段文字说明来解释“隼龙为什么来到了飞机上/森林里/水城威尼斯”。</p>
+<h1 id="战斗机制-武器"><a href="#战斗机制-武器" class="headerlink" title="战斗机制/武器"></a>战斗机制/武器</h1><p>特指和小怪的战斗，是我认为忍龙2最长的一块板。这个 部分仔细分析起来感觉可以另写一篇文章了，简单总结下核心机制大概是落地吸魂+断肢处决+敌人高AI</p>
+<p>落地吸魂UT和断肢处决的演出不止带来了感官刺激，也给玩家带来了战斗优势——无敌帧和敌人的快速减员。而小怪的AI是我目前见过最好的小怪AI，值得再仔细分析的优秀案例。放一个有趣也很有见解的评论在这里</p>
+<p><img src="https://s2.loli.net/2022/12/04/9vQBVgcE5GAJWMT.png" alt="一条B站评论"></p>
+<p>这里我想再讨论下我为什么玩不下去忍龙3。首先忍龙3取消了两个核心机制：断肢处决和落地吸魂，取而代之的是断骨（防反处决）和红手（连续杀人后可以放UT）。</p>
+<p>断骨的演出也很爽快，也能让敌人快速减员，但和断肢相比，断骨的触发条件更随机更被动（要等敌人释放投技）。而断肢是由玩家主动触发，也是忍龙2的主要战斗策略。用断骨替换断肢我觉得完全是舍本逐末，也让3代变成了和2代截然不同的两个游戏。到了re虽然又把断肢加回来，但是为了不喧宾夺主断肢率变得很低，两种机制的混合也让人容易感到困惑</p>
+<p>红手应该是想要取代落地吸魂，但是本来我跳一下就可以放出的必杀技，现在却要杀一堆人才能憋出来，这样的次级替代品只会让我感到窝火</p>
+<h1 id="Boss"><a href="#Boss" class="headerlink" title="Boss"></a>Boss</h1><p>动作游戏Boss确实是很难设计，要追求有冲击力的演出效果，就不可避免地做一些大体型Boss。但游戏的主流程肯定都是打多个小体型怪物，所以一些核心的战斗机制可能很难套用到单个大体型Boss身上。忍龙2尤其吃亏，因为没有办法对Boss进行断肢，也没有魂让你吸。最后其实很容易沦落为“躲开Boss攻击→打Boss一套”的回合制循环。</p>
+<p>但即便如此，忍龙的一些Boss还是差到令人发指，点名大蠕虫、火山怪和双飞龙。这些Boss的特点是逻辑简单、机制恶心，要求玩家凭空寻找一种特解。以火山怪为例，它只有三种招式：喷火、丢火球和滚来滚去，逻辑就是三种招来回出。可能是因为招式和逻辑太简单，所以干脆加了“碰到身体就有伤害”和“靠近头部会吃它投技”的两个机制。这就导致这个Boss变得又无聊又恶心，那玩家的特解是什么呢——扔爆炸镖。这样的游戏体验我觉得真的很无聊</p>
+<p>我想象中最好的Boss战可能是只狼里的弦一郎和剑圣：考验的是玩家对通用战斗机制的熟练程度，通过叙事和美术设计增加一些演出效果。如果硬要设计一些大体型Boss，那么必须要保证“躲避→攻击”的这个循环足够有趣，对美术设计的要求更高，也可以用QTE作为一种辅助手段。</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://gamefaqs.gamespot.com/xbox360/943273-ninja-gaiden-ii/faqs/53837">https://gamefaqs.gamespot.com/xbox360/943273-ninja-gaiden-ii/faqs/53837</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%B8%B8%E6%88%8F%E5%88%86%E6%9E%90/" rel="tag"># 游戏分析</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/02/12/%E8%BF%9B%E5%87%BB%E7%9A%84%E5%B7%A8%E4%BA%BA%E4%B8%AD%E4%BB%A4%E4%BA%BA%E9%9C%87%E6%92%BC%E7%9A%84%E4%B8%BB%E9%A2%98/" rel="prev" title="进击的巨人中令人震撼的主题">
+                  <i class="fa fa-chevron-left"></i> 进击的巨人中令人震撼的主题
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">白十四</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+</body>
+</html>
